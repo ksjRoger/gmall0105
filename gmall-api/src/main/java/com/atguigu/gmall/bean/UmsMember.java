@@ -1,15 +1,12 @@
-package com.atguigu.gmall.user.bean;
+package com.atguigu.gmall.bean;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.util.Date;
 
-/**
- * @Author: KSJ
- * @Date: Creat in 2:32 2020/2/26
- */
-public class UmsMember {
+public class UmsMember implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -184,5 +181,9 @@ public class UmsMember {
     public void setHistoryIntegration(int historyIntegration) {
         this.historyIntegration = historyIntegration;
     }
+
+
+
+
 
 }
